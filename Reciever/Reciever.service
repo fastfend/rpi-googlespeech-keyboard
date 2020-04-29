@@ -1,0 +1,11 @@
+[Unit]
+Description=Speech for Google Keyboard
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/home/pi/Desktop/GoogleSpeech
+ExecStart=/home/pi/Desktop/GoogleSpeech/output.app
+
+[Install]
+WantedBy=multi-user.target
